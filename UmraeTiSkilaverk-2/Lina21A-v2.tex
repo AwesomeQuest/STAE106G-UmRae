@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc} \usepackage[icelandic]{babel}
+\usepackage{latexsym,amssymb,amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+
+\voffset=-1.0in
+\hoffset=-0.5in
+\textwidth=6in
+\textheight=10.0in
+
+\begin{document}
+
+\pagestyle{empty}
+
+
+\newcommand{\Ov}{\mbox{${\bf 0}$}}
+\newcommand{\rv}{\mbox{${\bf r}$}}
+\newcommand{\vv}{\mbox{${\bf v}$}}
+\newcommand{\xv}{\mbox{${\bf x}$}}
+\newcommand{\yv}{\mbox{${\bf y}$}}
+\newcommand{\av}{\mbox{${\bf a}$}}
+\newcommand{\bv}{\mbox{${\bf b}$}}
+\newcommand{\cv}{\mbox{${\bf c}$}}
+\newcommand{\iv}{\mbox{${\bf i}$}}
+\newcommand{\jv}{\mbox{${\bf j}$}}
+\newcommand{\kv}{\mbox{${\bf k}$}}
+
+\newcommand{\ZZ}{\mbox{$\mathbb{Z}$}}
+\newcommand{\NN}{\mbox{$\mathbb{N}$}}
+\newcommand{\QQ}{\mbox{$\mathbb{Q}$}}
+\newcommand{\RR}{\mbox{$\mathbb{R}$}}
+\newcommand{\CC}{\mbox{$\mathbb{C}$}}
+
+\newcommand{\RRk}{\mbox{$\mathbb{R}^k$}}
+\newcommand{\RRn}{\mbox{$\mathbb{R}^n$}}
+\newcommand{\RRm}{\mbox{$\mathbb{R}^m$}}
+
+\centerline{\bf \Huge Línuleg algebra A}
+%\centerline{(STÆ106G)}
+\medskip
+\centerline{\bf \Large Verkefnablað vegna umræðutíma 2}
+
+\medskip
+
+\bigskip
+{\bf Skilverkefni fyrir 29.09.21:}  Þessi verkefni eru einstaklingsverkefni.  Lausnum verkefnanna á að skila miðvikudaginn 29.~september  í gegnum Canvaskerfið.
+
+\smallskip
+
+{\bf 1.}  Látum $A$, $B$ og $C$ vera mengi.  
+
+\begin{enumerate}[label=(\alph*)]
+	\item Sannið eða afsannið:  Ef $A\setminus C\subseteq B\setminus C$ þá er $A\subseteq B$.
+	\item Sannið eða afsannið:  Ef $A\subseteq B$ þá er $A\setminus C\subseteq B\setminus C$.
+\end{enumerate}
+
+\smallskip
+
+{\bf 2.}  Verkefni 4.3.3 á bls.~65
+
+Let $A\subseteq \mathbb{R}$, and let $x\in \mathbb{R}$. We say that the point $x$ is \emph{far away} from the set A if and only if:
+
+\qquad \qquad $\exists d >0$: No element of $A$ belongs to the set $[x-d,x]$.
+
+Equivalently, $A\cap [x-d,x]=\emptyset $. if this does not happen, we say that $x$ is \emph{close} to $A$
+
+\begin{enumerate}[label=(\alph*),itemsep=0pt]
+	\item Draw a  picture of a set $A$ and an element $x$ such that $x$ is \emph{far away} from $A$.
+	\item Draw a  picture of a set $A$ and an element $x$ such that $x$ is \emph{close} to $A$.
+	\item Compute the definition of "$x$ is \emph{close} to $A$". [So negate "$x$ is far away from $A$".]
+	\item Let $A=\{ 1,2,3\} $. Show that $x=4$ is \emph{far away} from $A$ by using definitions.
+	\item Let $A=\{ 1,2,3\} $. Show that $x=1$ is \emph{close} to $A$ by using definitions.
+	\item Show that if $x\in A$, then $x$ is \emph{close} to $A$.
+	\item Let $A$ be the open interval $(a,b)$. Is the end-point $a$ \emph{far away} from $A$? What about the end point $b$
+\end{enumerate}
+
+\smallskip
+
+{\bf 3.}  Sannið formlega að ef $A, B$ og $C$ er mengi þá er $A\cap (B\cup C)=(A\cap B)\cup (A\cap C)$.
+
+\smallskip
+
+{\bf 4.}  Verkefni 6.2.4 og 6.2.5 á bls.~104--105.
+
+Here are three incorrect proofs of Theorem 6.5. Explain why each fails.
+
+\begin{enumerate}[label=(\alph*),itemsep=0pt]
+	\item Let $x=\mathcal{P} (A)$. Then $x\in A$. Since $A\subseteq B$, we have $x\in B$. Therefore $x\in \mathcal{P} (B)$, and so $\mathcal{P} (A) \subseteq \mathcal{P} (B)$.
+	\item Let $A=\{ 1,2\} $ and $B=\{ 1,2,3\} $. Then $\mathcal{P}(A)=\{ \emptyset , \{ 1\} ,\{ 2\} ,A\} $, and $\mathcal{P}(B)=\{ \emptyset ,\{ 1\} ,\{ 2\} ,\{ 3\} ,\{ 1,2\} ,\{ 1,3\} ,\{ 2,3\} ,B\} $. Thus $\mathcal{P}(A)\subseteq \mathcal{P}(B)$.
+	\item Let $x\in A$. Since $A\subseteq B$, we have $x\in B$. Since $x\in A$ and $x\in B$, we have $\{ x\} \in \mathcal{P}(A)$, and $\{ x\} \in \mathcal{P}(B)$.
+\end{enumerate}
+
+\vfill  17.~september 2021
+\hfill  Rögnvaldur G. Möller
+
+
+\end{document}

@@ -1,0 +1,296 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc} \usepackage[icelandic]{babel}
+\usepackage{latexsym,amssymb,amsmath}
+\usepackage[utf8]{inputenc}
+
+
+\voffset=-1.0in
+\hoffset=-0.5in
+\textwidth=6in
+\textheight=10.0in
+
+\begin{document}
+
+\pagestyle{empty}
+
+
+\newcommand{\Ov}{\mbox{${\bf 0}$}}
+\newcommand{\rv}{\mbox{${\bf r}$}}
+\newcommand{\vv}{\mbox{${\bf v}$}}
+\newcommand{\xv}{\mbox{${\bf x}$}}
+\newcommand{\yv}{\mbox{${\bf y}$}}
+\newcommand{\av}{\mbox{${\bf a}$}}
+\newcommand{\bv}{\mbox{${\bf b}$}}
+\newcommand{\cv}{\mbox{${\bf c}$}}
+\newcommand{\iv}{\mbox{${\bf i}$}}
+\newcommand{\jv}{\mbox{${\bf j}$}}
+\newcommand{\kv}{\mbox{${\bf k}$}}
+
+\newcommand{\ZZ}{\mbox{$\mathbb{Z}$}}
+\newcommand{\NN}{\mbox{$\mathbb{N}$}}
+\newcommand{\QQ}{\mbox{$\mathbb{Q}$}}
+\newcommand{\RR}{\mbox{$\mathbb{R}$}}
+\newcommand{\CC}{\mbox{$\mathbb{C}$}}
+
+\newcommand{\RRk}{\mbox{$\mathbb{R}^k$}}
+\newcommand{\RRn}{\mbox{$\mathbb{R}^n$}}
+\newcommand{\RRm}{\mbox{$\mathbb{R}^m$}}
+
+\author{Ásgrímur Ari Einarsson,  Katrín Fríður Gunnarsdóttir, Torfi Þorgrímsson}
+
+\centerline{\bf \Huge Línuleg algebra A}
+\centerline{(STÆ106G)}
+\medskip
+\centerline{\bf \Large Verkefnablað vegna umræðutíma 1}
+
+\medskip
+
+\begin{center}
+	Ásgrímur Ari Einarsson,  Katrín Fríður Gunnarsdóttir, Torfi Þorgrímsson
+\end{center}
+
+{\bf Umræðutímar:}
+
+
+\bigskip
+{\bf Skilverkefni fyrir miðvikudaginn 15.09.21:}  Þessi verkefni eru hugsuð sem hópverkefni, þannig að þið glímið við þau 3--4 saman og skilið sameiginlegri lausn.  Ykkur verður raðað handahófskennt í hópa.  Lausnum verkefnanna á að skila í síðasta lagi kl. 17:00  miðvikudaginn 15. september.  Skilið á Canvas síðu námskeiðsins.
+
+\smallskip
+
+{\bf 1.}  Verkefni 2.1.13 á bls.~18 í bók Donaldson og Pantano.
+
+Let R be the proposition "The summit of Mount Everest is underwater". Suppose that S is a
+proposition such that (R$\lor$ S) $\Longleftrightarrow$  (R$\land$ S)  is false.
+
+\begin{center}
+   \begin{tabular}{||c c c c c||} 
+	\hline
+	R & S & R$\vee$ S & R$\wedge$S &(R$\vee$S)$\Longleftrightarrow$(R$\wedge$S) \\ [0.5ex] 
+	\hline\hline
+	T & T & T & T & T\\ 
+	\hline 
+	\hline
+	T & F & T & F & F\\ 
+	\hline 
+	\hline
+	F & T & T & F & F\\ 
+	\hline 
+	\hline
+	F & F & F & F & T\\ 
+	\hline 
+	\hline
+   \end{tabular}
+   \end{center}
+
+(a) What can you say about S?
+
+Um $S$ getum við sagt að þegar $R$ er ósatt þá er $S$ satt og hinseigin
+
+$S$ er $\lnot R$
+
+(b) What if, instead, $(R\lor S) \Longleftrightarrow (R\land S)$ is true?
+
+Þá hafa $S$ og $R$ sama sanngildi
+
+\smallskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+{\bf 2.}  Verkefni 2.2.4 á bls.~30 í bók Donaldson og Pantano.
+
+Augustus De Morgan satisfied his own problem:
+
+\begin{center}
+	I turn(ed) $x$ years of age in the year $x^2$.
+\end{center}
+
+
+(a) Given that de Morgan died in 1871, and that he wasn’t the beneficiary of some miraculous anti-aging treatment, find the year in which he was born
+
+Gerum ráð fyrir að fólk getur að eins verið heiltölu ár gömul og lifir aðeins hundrað ár.
+
+Þá einfaldlega skoðum við hvaða tölur í öðru veldi milli 0 og 100 eru innanvið hundrað ár á undan 1871
+
+$43^2 =  1849$
+
+$1849 - 43 = 1806$
+
+de Morgan var fæddur 1806.
+
+\smallskip
+
+(b) Suppose you have an acquaintance who satisfies the same problem. How old will they turn in 2014?
+
+
+$45^2 = 2025$
+
+$2025 - 45 = 1980$
+
+$2014 - 1980 = 34$
+
+Hann mun vera 34 ára gamall 2014
+
+\smallskip
+
+\newpage
+
+{\bf 3.}  Verkefni 2.2.11 á bls.~31 í bók Donaldson og Pantano.
+
+Let $x$ and $y$ be integers. Prove: For $x^2 + y^2$ to be even, it is neccessary $x$ and $y$ have the same parity (i.e. both even or both odd)
+
+
+%látum $x$ og $y$ vera even intergers: $2^2+4^2 = 20$
+
+%látum $x$ og $y$ vera odd intergers: $3^2+5^2 = 34$
+
+%látum $x$ vera odd og $y$ even integers: $7^2+6^2 = 85$
+
+%Fyrir hvert $x^2 + y^2$ þar sem bæði $x$ og $y$ eru odd numbers eða bæði $x$ og $y$ eru even numbers kemur út even number. Fyrir hvert $x^2 + y^2$ þar sem annaðhvort $x$ eða $y$ er odd number og annað hvort $x$ eða $y$ even number fæst út odd number. 
+
+%$(A\Rightarrow B)\equiv (\neg B \Rightarrow \neg A)$
+
+$n,m\in \mathbb{N} $
+
+% Let $x = 2n + 1$ is an odd integer, and let $y = 2m$ is even
+
+% Then $(2n + 1)^2 + (2m)^2 = 4n^2 + 4n + 1 + 4m^2 = 2(2n^2 + 2n + 2m^2) + 1$
+
+% Thus if $x$ and $y$ are of different parity, $x^2 + y^2$ is always odd.
+
+Setjum $x=2n, y=2m$   $n,m\in \mathbb{N}$
+
+þá er $x^2 + y^2$ jafnt $(2n)^2 + (2m)^2$
+
+$= 4n^2+4m^2 = 2(2n^2 +2m^2)$ sem er slétt 
+
+Setjum $x=2n+1, y=2m+1$   $n,m\in \mathbb{N}$
+
+þá er $x^2 + y^2$ jafnt $(2n+1)^2 + (2m+1)^2$
+
+$= 4n^2+4n+1+4m^2+4m+1 = 2(2n^2+2n+2m^2+2m+1)$sem er slétt
+
+Gerum ráð fyrir að $x = 2n, y = 2m+1$   $n,m\in \mathbb{N} $ 
+
+þá er $x^2 + y^2$ jafnt $(2n)^2 + (2m+1)^2$
+
+$= 4n^2+4m^2 +4m +1 = 2(2n^2 +2m^2 +2m)+1$ sem er alltaf oddatala svo $x$ og $y$ verða að vera báðar sléttar- eða báðar oddatölur
+
+
+\smallskip
+\bigskip
+\bigskip
+
+{\bf 4.}  Verkefni 2.2.18 á bls.~32 í bók Donaldson og Pantano.
+
+You are given the following facts.
+
+(a) All polynomials are continuous.
+
+(b) (Intermediate Value Theorem) If $f$ is continuous on $[a,b]$ and $L$ lies between $f(a)$ and $f(b)$, then $f(x)=L$ for some $x\in (a,b)$
+
+(c) If $f^' (x)>0$ on an interval, then $f$ is an increasing function
+
+Use these facts to give a formal proof that $x^17 + 12x^3 + 13x + 3 = 0$ has exactly one solution x, and that $x$ lies in the interval $(-1, 0)$.
+
+Since varibales raised to an even power can have multiple solutions can we see that this polynomial has only one solution
+
+$f(x)=x^(17) + 12x^3 + 13x + 3$
+
+$f(-1) = (-1) + (-12) + (-13) + 3 = (-23)$
+
+$f(0) = 0+0+0+3 = 3$
+
+$f$ is continuous according to (a); $0$ lies between $-23$ and $3$ thus $f(x)=0$ lies between $f(-1)$ and $f(0)$
+
+\smallskip
+
+\newpage
+
+{\bf 5.}  Verkefni 2.3.8 á bls.~38 í bók Donaldson og Pantano.
+
+Consider the propositional function $P(x,y,z): (x - 3)^2+(y - 2)^2 + (z - 7)^2 >0$
+where the domain of each of the variables x, y and z is R.
+
+(a) Express the quantified statement $\forall x \in R, \forall y \in R, \forall z \in R, P(x, y, z)$ in words.
+
+Svar: fyrir öll $x$ í $R$, öll $y$ í $R$ og öll $z$ í $R$, $P(x,y,z): (x-3)^2+(y-2)^2+(z-7)^2 >0$, þ.e.a.s. öll x,y og z uppfylla það að þegar sett er í jöfnu $P$ er svarið $>0$ 
+
+(b) Is the quantified statement in (a) true or false? Explain.
+
+%Svar: $P(x,y,z)$ er sögð vera sönn ef $P(x,y,z)$ er sönn fyrir hvert einasta $x,y,z\in R$, til þess 
+
+Þetta er ósatt. Ef $x=3,y=2, og z=7$ þá er $P(x,y,z)=0\not> 0$
+
+%$k^2$ fyrir sérhvert $k \in \mathbb{R}$ er alltaf jákvæð, og jákvæðar tölur lagðar saman eru alltaf jákvæðar.
+
+(c) Express the negation of the quantified statement in (a) in symbols.
+
+$\exists x,y,z; P(x,y,z): (x-3)^2+(y-2)^2+(z-7)^2 \leq 0$
+
+(d) Express the negation of the quantified statement in (a) in words.
+
+Til er $x,y,z$ í $\mathbb{R}$ þannig að $P(x,y,z): (x-3)^2+(y-2)^2+(z-7)^2$ er minni en eða jafnt og $0$
+
+(e) Is the negation of the quantified statement in (a) true or false? Explain.
+
+Þetta er satt eins og er minst á í (b) $P(3,2,7)=0 \leq 0$
+
+%svar: hún er ósönn þar sem jákvæðar tölur eru alltaf jákvæðar þegar þær eru lagðar saman, (eins og sjá má í (b) lið)
+
+\bigskip
+\bigskip
+\bigskip
+
+{\bf 6.}    (Þraut samin 1979 af bandaríska sálfræðingnum Peter Wason.)  Þú færð fjögur spjöld.  Á hverju spjaldi er eitt tákn og táknin á spjöldunum fjórum eru:  Rauð hringskífa, blá hringskífa, rauður ferningur og blár ferningur.  Sá sem réttir þér spjöldin segist hafa valið lit (blátt/rautt)  og form (hringskífa/ferningur).  Tákn sem er {\bf annað hvort} með valda litinn eða valda formið er sagt {\em gott}.   Þér er sagt að bláa hringskífan sé gott tákn.  Segið til um vhort hin táknin séu a) örugglega góð, b) örugglega ekki góð eða c) upplýsingarnar dugi ekki til að ákvarða með vissu hvort táknið sé gott.  
+  
+  {\bf Leiðbeining.}  Það að velja lit og lögun er jafngilt því að velja eitt tákn.  Valda táknið er örugglega ekki bláa hringskífan því bláa hringskífan hefur bara annan af völdu eiginleikunum.
+
+6. Uppfylla þarf segðina Litur(L)$\oplus$ Form(S)
+\newline Ef Blá Hringskífa er góð þá er annað  hvort blár eða hringskífa valinn
+
+\begin{center}
+    \begin{tabular}{||c c c c||} 
+     \hline
+     L(b) & L(r) & S(h) & S(f) \\ [0.5ex] 
+     \hline\hline
+     T & F & F & T \\ 
+     \hline 
+     \hline
+     F & T & T & F \\ 
+     \hline 
+     
+    \end{tabular}
+    \end{center}
+
+Og Segðin Litur(L)$\oplus$ Form(S)
+\newline
+\begin{center}
+    \begin{tabular}{||c c c c||} 
+	\hline
+	L(b)$\oplus$S(h) & L(b)$\oplus$S(f) & L(r)$\oplus$S(h) & L(r)$\oplus$S(f) \\ [0.5ex] 
+	\hline\hline
+	T & F & F & T \\ 
+
+	\hline 
+	\hline
+\end{tabular}
+\end{center}
+Rauður ferningur er því góður og annað hvort er búið að velja bláan ferning eða rauða hring skífu sem hafa ekkert sameginlegt svo þau eru vond(ekki góð) hvort sem er valið.
+
+%Fyrst að annað hvort blár eða hringskífa er gott en ekki bæði þá er annað hvort rauður eða ferningur góður, þannig að rauður ferningur er góður. Hin tvö spjöldin eru annað hvort með bæði góðu eða ekki með góðu eru hvorug þeirra góð
+
+% Rauður ferningur 		= góður
+% Blá hringskífa 		= góð
+% Rauð hringskífa		= vond
+% Blár ferningur 		= vondur
+
+
+\vfill  20.~ágúst 2021
+\hfill  
+
+
+\end{document}
