@@ -153,6 +153,13 @@ $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$.   Forsendan segir að $a, b, c, d>0$.
 
 {\bf (a)}  Sýnið að $\lambda+\mu=a+d$ og $\lambda\mu=ad-bc$.
 
+$\Det
+\begin{bmatrix}
+	a-\lambda&b\\
+	c&d-\lambda
+\end{bmatrix}
+=(a-\lambda)(d-\lambda)-bc=0$
+
 $\lambda = \dfrac{a+d+\sqrt{a^2-2ad+d^2+4bc}}{2}$
 
 $\mu = \dfrac{a+d-\sqrt{a^2-2ad+d^2+4bc}}{2}$
@@ -185,12 +192,17 @@ $=\dfrac{4ad+4bc}{4}=ad+bc$
 
 {\bf (b)}  Sýnið að bæði $\lambda$ og $\mu$ eru rauntölur. [Leiðbeining:  Gerið ráð fyrir að $\lambda=x+iy$ með $y\neq 0$.  Þá er $\mu=x-iy$ (Afhverju?).  Notið svo jöfnurnar í {\bf (a)}-lið til að leiða fram mótsögn.  Athugið sérstaklega að $2x=a+d$.   Ein leið væri að fá að $-bc$ er jafnt $(a-d)^2+y^2$.] 
 
-
+\newpage
 
 {\bf (c)}   Gerið grein fyrir að $\lambda\neq \mu$ og að ef $\lambda>\mu$ þá er $\lambda>|\mu|>0$.  Hér á eftir er gert ráð fyrir $\lambda> \mu$.
 [Leiðbeining: Til að sýna að $\lambda\neq \mu$ er hægt að horfa á útreikningana í {\bf (b)}-lið og setja $y=0$.  Notið ykkur jöfnurnar í {\bf (a)}-lið.]
 
+\bigskip
+Fyrst að það eru tvo eigingildi fyrir $A$ sem við skrifum 
 
+$\lambda = \dfrac{a+d\pm\sqrt{a^2-2ad+d^2+4bc}}{2}$
+
+og við getum skilgreint minna $\lambda = \mu$
 
 {\bf (d)}  Notið ykkur jöfnurnar í {\bf (a)}-lið til að sýna að $\lambda>a$ eða $\lambda>d$.
 
