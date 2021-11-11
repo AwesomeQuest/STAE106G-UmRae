@@ -1,0 +1,239 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc} \usepackage[icelandic]{babel}
+\usepackage{latexsym,amssymb,amsmath}
+\usepackage{cancel}
+%\usepackage[utf8]{inputenc}
+\UseRawInputEncoding
+
+\voffset=-1.0in
+\hoffset=-0.5in
+\textwidth=6in
+\textheight=10.0in
+
+\begin{document}
+
+\pagestyle{empty}
+
+
+\newcommand{\Ker}{\mbox{${\rm Ker}$}}
+\newcommand{\Dim}{\mbox{${\rm Dim}$}}
+\newcommand{\nin}{\mbox{$\,\not\in\,$}}
+\newcommand{\Det}{\mbox{${\rm Det}$}}
+\newcommand{\proj}{\mbox{${\rm proj}$}}
+\newcommand{\Span}{\mbox{${\rm Span}$}}
+\newcommand{\AT}{\mbox{$A^{\rm trans}$}}
+\newcommand{\Rank}{\mbox{${\rm Rank}$}}
+\newcommand{\Range}{\mbox{${\rm Range}$}}
+\newcommand{\nullity}{\mbox{${\rm nullity}$}}
+\newcommand{\Ov}{\mbox{${\bf 0}$}}
+\newcommand{\rv}{\mbox{${\bf r}$}}
+\newcommand{\vv}{\mbox{${\bf v}$}}
+\newcommand{\xv}{\mbox{${\bf x}$}}
+\newcommand{\yv}{\mbox{${\bf y}$}}
+\newcommand{\av}{\mbox{${\bf a}$}}
+\newcommand{\bv}{\mbox{${\bf b}$}}
+\newcommand{\cv}{\mbox{${\bf c}$}}
+\newcommand{\iv}{\mbox{${\bf i}$}}
+\newcommand{\jv}{\mbox{${\bf j}$}}
+\newcommand{\kv}{\mbox{${\bf k}$}}
+\newcommand{\uv}{\mbox{${\bf u}$}}
+\newcommand{\Av}{\mbox{${\bf A}$}}
+\newcommand{\Cv}{\mbox{${\bf C}$}}
+\newcommand{\Iv}{\mbox{${\bf I}$}}
+\newcommand{\OOv}{\mbox{${\bf O}$}}
+
+\newcommand{\ZZ}{\mbox{$\mathbb{Z}$}}
+\newcommand{\NN}{\mbox{$\mathbb{N}$}}
+\newcommand{\QQ}{\mbox{$\mathbb{Q}$}}
+\newcommand{\RR}{\mbox{$\mathbb{R}$}}
+\newcommand{\CC}{\mbox{$\mathbb{C}$}}
+\newcommand{\PP}{\mbox{$\mathbb{P}$}}
+
+\newcommand{\RRk}{\mbox{$\mathbb{R}^k$}}
+\newcommand{\RRn}{\mbox{$\mathbb{R}^n$}}
+\newcommand{\RRm}{\mbox{$\mathbb{R}^m$}}
+
+\centerline{\bf \Huge Línuleg algebra A}
+%\centerline{(STÆ106G)}
+\medskip
+\centerline{\bf \Large Umræðutímaefnisskilaverkefni 4}
+\centerline{Höfundir hér}
+
+\bigskip
+{\bf Skilverkefni fyrir 12.11.21:}  Þessi verkefni eru hugsuð sem hópverkefni, þannig að þið glímið við þau 4--5 saman og velur Canvas-sjálfur í hópana.  Þessi verkefni snúast öll um ákveður, kennimargliðu og eigingildi.  Þau eru krefjandi en ég vona að ykkur þyki gaman að glíma við þau.
+
+\smallskip
+
+
+{\bf 1.} Látum $A$ vera $n\times n$ fylkið 
+$$A=\begin{bmatrix}
+a+b&a&a&\cdots&a\\
+a&a+b&a&\cdots&a\\
+a&a&a+b&\cdots&a\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+a&a&a&\cdots&a+b
+\end{bmatrix}.$$
+Sýnið að $\det A=b^{n-1}(na+b)$.  
+
+\underline{Lausn} Byrjumm á því að draga línu 1 frá hinum línunum og fáum:
+
+\[
+A=\begin{bmatrix}
+	a+b&a&a&\cdots&a\\
+	a&a+b&a&\cdots&a\\
+	a&a&a+b&\cdots&a\\
+	\vdots&\vdots&\vdots&\ddots&\vdots\\
+	a&a&a&\cdots&a+b
+\end{bmatrix}
+\begingroup
+\renewcommand*{\arraystretch}{0.7}
+\begin{matrix}
+	L_2-L_1\\
+	L_3-L_1\\
+	\thicksim \\
+	L_y-L_1\\
+	\vdots\\
+	L_n-L_1
+\end{matrix}
+\endgroup
+\begin{bmatrix}
+	a+b&a&a&\cdots&a\\
+	-b&b&0&\cdots&0\\
+	-b&0&b&\cdots&0\\
+	\vdots&\vdots&\vdots&\ddots&\vdots\\
+	-b&0&0&\cdots&b
+\end{bmatrix}
+=B
+\]
+
+Við skoðum nú næst $3\times 3$ fylki $B_3$ og fáum $\Det(B_3)$
+
+\[
+\Det \begin{bmatrix}
+	a+b&a&a\\
+	-b&b&0\\
+	-b&0&0
+\end{bmatrix}
+=(a+b)(b*b-0)-a((-b)*b-0)+a(0-b*(-b))
+\]
+$=b^2(a+b)$
+
+\smallskip\newpage
+
+
+
+{\bf 2.}   Leysið jöfnuna 
+$$\det\begin{bmatrix}
+1&1&1&\cdots&1\\
+1&1-x&1&\cdots&1\\
+1&1&2-x&\cdots&1\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+1&1&1&\cdots&n-x
+\end{bmatrix}=0.$$
+
+\smallskip\newpage
+
+{\bf 3.}  Setning Perron (1880--1975) er mjög nytsamleg niðurstaða um eigingildi ferningsfylkja sem eru þannig að allar tölurnar eru jákvæðar.  Setningin, og sérstaklega útvíkkun Frobeniusar (1849--1917), fellur utan við námsefni námskeiðs eins og okkar.  En það passar vel við okkar efni að sanna setninguna fyrir $2\times 2$ fylki.  
+
+{\bf Setning Perrons fyrir $2\times 2$ fylki. }  {\em Látum $A$ vera $2\times 2$ fylki þannig að allar tölurnar í því eru jákvæðar.  
+
+{\bf (i)}  Þá hefur $A$ tvö rauntalna eigingildi $\lambda$ og $\mu$.  
+
+{\bf (ii)}  Ef gert er ráð fyrir að $|\lambda|\geq |\mu|$ þá er  $\lambda> |\mu|$.  Sér í lagi er $\lambda>0$.  
+
+{\bf (iii)} Til er eiginvigur fyrir eigingildið $\lambda$ þannig að bæði hnit vigursins eru jákvæð.  }
+
+\medskip
+
+Skiptum sönnuninni upp í nokkur skref.  Ritum 
+$A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$.   Forsendan segir að $a, b, c, d>0$.  
+
+\smallskip
+
+{\bf (a)}  Sýnið að $\lambda+\mu=a+d$ og $\lambda\mu=ad-bc$.
+
+$\lambda = \dfrac{a+d+\sqrt{a^2-2ad+d^2+4bc}}{2}$
+
+$\mu = \dfrac{a+d-\sqrt{a^2-2ad+d^2+4bc}}{2}$
+
+$\lambda + \mu =\dfrac{a+d+a+d-\cancel{\sqrt{a^2-2ad+d^2+4bc}}-\cancel{\sqrt{a^2-2ad+d^2+4bc}}}{2}$
+
+$=\dfrac{2a+2d}{2}=a+d$
+
+\smallskip
+\smallskip
+
+$\lambda \mu =\dfrac{a+d+\sqrt{a^2-2ad+d^2+4bc}}{2}*\dfrac{a+d-\sqrt{a^2-2ad+d^2+4bc}}{2}$
+
+$=\dfrac{a^2+ad+a\sqrt{a^2-2ad+d^2+4bc}+da+d^2+d\sqrt{a^2-2ad+d^2+4bc}}{4}$
+
+\quad$+\dfrac{-\sqrt{a^2-2ad+d^2+4bc}a-\sqrt{a^2-2ad+d^2+4bc}d}{4}$
+
+\quad$\dfrac{-\sqrt{a^2-2ad+d^2+4bc}\sqrt{a^2-2ad+d^2+4bc}}{4}$
+
+$=\cancel{\dfrac{a\sqrt{a^2-2ad+d^2+4bc}-\sqrt{a^2-2ad+d^2+4bc}a}{4}}$
+
+\quad$+\cancel{\dfrac{d\sqrt{a^2-2ad+d^2+4bc}-\sqrt{a^2-2ad+d^2+4bc}d}{4}}$
+
+\bigskip
+\quad$+\dfrac{\cancel{a^2}+2ad+\cancel{d^2}-\cancel{a^2}+2ad-\cancel{d^2}+4bc}{4}$
+
+$=\dfrac{4ad+4bc}{4}=ad+bc$
+
+\bigskip
+
+{\bf (b)}  Sýnið að bæði $\lambda$ og $\mu$ eru rauntölur. [Leiðbeining:  Gerið ráð fyrir að $\lambda=x+iy$ með $y\neq 0$.  Þá er $\mu=x-iy$ (Afhverju?).  Notið svo jöfnurnar í {\bf (a)}-lið til að leiða fram mótsögn.  Athugið sérstaklega að $2x=a+d$.   Ein leið væri að fá að $-bc$ er jafnt $(a-d)^2+y^2$.] 
+
+
+
+{\bf (c)}   Gerið grein fyrir að $\lambda\neq \mu$ og að ef $\lambda>\mu$ þá er $\lambda>|\mu|>0$.  Hér á eftir er gert ráð fyrir $\lambda> \mu$.
+[Leiðbeining: Til að sýna að $\lambda\neq \mu$ er hægt að horfa á útreikningana í {\bf (b)}-lið og setja $y=0$.  Notið ykkur jöfnurnar í {\bf (a)}-lið.]
+
+
+
+{\bf (d)}  Notið ykkur jöfnurnar í {\bf (a)}-lið til að sýna að $\lambda>a$ eða $\lambda>d$.
+
+{\bf (e)}   Sýnið að ef $\vv=(v_1,v_2)$ er eiginvigur tilheyrandi $\lambda$ þá er $v_1\neq 0$ og $v_2\neq 0$.
+
+  {\bf (f)}  Gerið grein fyrir að hægt er að velja eiginvigurinn   $\vv=(v_1,v_2)$ fyrir $\lambda$ þannig að $v_1=1$ og þá er $v_2>0$.  
+\smallskip\newpage
+
+{\bf 4.}  Cayley-Hamilton setningin er grundvallar niðurstaða um kennimargliðuna.  Cayley-Hamilton setningin mun nýtast ykkur í Stærðfræðigreiningu III þegar þið reiknið $e^{tA}$ fyrir $n\times n$ fylki $A$.  Í þessu námskeiði höfum við ekki tiltæk verkfæri til að sanna setninguna almennt en við getum sannað sértilfelli.
+
+\smallskip
+
+{\bf Cayley-Hamilton setningin.}  Látum $A$ vera $n\times n$ fylki.  Ef $p(\lambda)$ er kennimargliða $A$ þá er $p(A)=\OOv$.  (Athugið að ef $p(\lambda)=(-1)^n\lambda^n+\cdots+c_1\lambda+c_0$ þá er 
+ $p(A)=(-1)^nA^n+\cdots+c_1A+c_0I$.)
+
+\medskip
+ 
+{\bf (a)} Er eftirfarandi sönnun á Cayley-Hamilton setningunni í lagi?  
+
+\smallskip
+
+{\em Sönnun.}  Nú er 
+$ p(\lambda)=\det(A-\lambda I)$.   Þá $ p(A)=\det(A-A I)=\det(\OOv)=0$.   Sönnun lokið.
+
+\smallskip
+
+{\bf (b)} Sannið Cayley-Hamilton setninguna fyrir $2\times 2$ fylki $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$.  (Cayley (1821-1895) birti bara sönnun á þessu sértilfelli en mun líka hafa sannað setninguna fyrir $3\times 3$ fylki.  Almenna setningin var fyrst sönnuð af Frobenius.)
+
+\medskip
+
+Látum $A$ vera $n\times n$ fylki.  Í liðum {\bf (c)}--{\bf (e)} sönnum við Cayley-Hamilton setninguna í því  tilfelli að fylkið $A$ sé hornalínugeranlegt. 
+
+\smallskip
+
+{\bf (c)}  Látum $p(\lambda)$ vera margliðu.  Gerið grein fyrir því að ef $\vv$ er eiginvigur $A$ og $\lambda$ tilheyrandi eigingildi þá er $p(A)\vv=p(\lambda)\vv$.
+
+{\bf (d)}  Sýnið að ef $\vv$ er eiginvigur $A$ og $p(\lambda)$ er kennimargliða $A$ þá er $ p(A)\vv=\Ov$.
+
+{\bf (e)}  Sýnið að ef fylkið $A$ er hornalínugeranlegt, þ.e.a.s.\ til er grunnur eiginvigra, þá er $ p(A)=\OOv$.
+
+ 
+\vfill 31.~október 2021
+\hfill  Rögnvaldur G. Möller
+
+
+\end{document}
