@@ -206,9 +206,13 @@ og við getum skilgreint minna $\lambda = \mu$
 
 {\bf (d)}  Notið ykkur jöfnurnar í {\bf (a)}-lið til að sýna að $\lambda>a$ eða $\lambda>d$.
 
+
+
 {\bf (e)}   Sýnið að ef $\vv=(v_1,v_2)$ er eiginvigur tilheyrandi $\lambda$ þá er $v_1\neq 0$ og $v_2\neq 0$.
 
-  {\bf (f)}  Gerið grein fyrir að hægt er að velja eiginvigurinn   $\vv=(v_1,v_2)$ fyrir $\lambda$ þannig að $v_1=1$ og þá er $v_2>0$.  
+
+
+{\bf (f)}  Gerið grein fyrir að hægt er að velja eiginvigurinn   $\vv=(v_1,v_2)$ fyrir $\lambda$ þannig að $v_1=1$ og þá er $v_2>0$.  
 \smallskip\newpage
 
 {\bf 4.}  Cayley-Hamilton setningin er grundvallar niðurstaða um kennimargliðuna.  Cayley-Hamilton setningin mun nýtast ykkur í Stærðfræðigreiningu III þegar þið reiknið $e^{tA}$ fyrir $n\times n$ fylki $A$.  Í þessu námskeiði höfum við ekki tiltæk verkfæri til að sanna setninguna almennt en við getum sannað sértilfelli.
@@ -227,9 +231,23 @@ og við getum skilgreint minna $\lambda = \mu$
 {\em Sönnun.}  Nú er 
 $ p(\lambda)=\det(A-\lambda I)$.   Þá $ p(A)=\det(A-A I)=\det(\OOv)=0$.   Sönnun lokið.
 
+Lausn:
+
+Ef skilgreiningin á $\OOv$ er núll fylki þá já. 
+
 \smallskip
 
 {\bf (b)} Sannið Cayley-Hamilton setninguna fyrir $2\times 2$ fylki $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$.  (Cayley (1821-1895) birti bara sönnun á þessu sértilfelli en mun líka hafa sannað setninguna fyrir $3\times 3$ fylki.  Almenna setningin var fyrst sönnuð af Frobenius.)
+
+$A-A=0, \forall A\in \mathbb{R}^{n\times m}$
+
+$AI=A, \forall A\in \mathbb{R}^{n\times m}$
+
+$\Det (0)=0$
+
+$p(x)=\Det(A-xI)$
+
+$p(A)=\Det(A-AI)=\Det(A-A)=\Det(0)=0$
 
 \medskip
 
@@ -238,6 +256,8 @@ Látum $A$ vera $n\times n$ fylki.  Í liðum {\bf (c)}--{\bf (e)} sönnum við Cayle
 \smallskip
 
 {\bf (c)}  Látum $p(\lambda)$ vera margliðu.  Gerið grein fyrir því að ef $\vv$ er eiginvigur $A$ og $\lambda$ tilheyrandi eigingildi þá er $p(A)\vv=p(\lambda)\vv$.
+
+
 
 {\bf (d)}  Sýnið að ef $\vv$ er eiginvigur $A$ og $p(\lambda)$ er kennimargliða $A$ þá er $ p(A)\vv=\Ov$.
 
