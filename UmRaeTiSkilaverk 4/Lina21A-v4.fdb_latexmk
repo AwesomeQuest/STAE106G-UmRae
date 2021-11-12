@@ -1,12 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1636749112 "c:/Users/torfi/Documents/Skóli/H2021/STÆ106G/HópUmræ/UmRaeTiSkilaverk 4/Lina21A-v4.tex" "Lina21A-v4.pdf" "Lina21A-v4" 1636749113
+["pdflatex"] 1636750286 "c:/Users/torfi/Documents/Skóli/H2021/STÆ106G/HópUmræ/UmRaeTiSkilaverk 4/Lina21A-v4.tex" "Lina21A-v4.pdf" "Lina21A-v4" 1636750287
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1631634375 31952 0ac8e909c851b644f471df636c3c937c ""
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk" 1631634377 49100 4254624b3c48be7a85c944691dacc2e7 ""
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk" 1631634381 72288 a8436578a51d06479f469517b433ea7b ""
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1631634379 28440 77d01893ea1c13c7d3f6511618be86eb ""
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1200.pk" 1631634374 39120 c36bf4214353a928a71f3ba89189c3a7 ""
   "C:/Users/torfi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1631555165 9715384 417679983ccef5cdff8ba86cc8342797 ""
-  "C:/Users/torfi/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1636662119 81068 299f700eb05b1217173e62b88b513bd0 ""
+  "C:/Users/torfi/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1636749996 81068 299f700eb05b1217173e62b88b513bd0 ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1200.tfm" 993061958 3200 b8d69bc738e5ef3e08cefeef3109ff56 ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1728.tfm" 993061962 3204 d35cb76836b6cb4ed404dd64a550530d ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx2488.tfm" 993061966 3192 b0a07ba84fb3fb36d088c4f796e254b9 ""
@@ -65,9 +65,9 @@
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/tex/latex/base/ulasy.fd" 1623741700 2233 fb041045cf7e676975d0d6824c7a540e ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/tex/latex/cancel/cancel.sty" 1388370247 7592 dd751af313a16a0308545d5bfd7aaaa2 ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1628077986 27662 df2ac0cbce6c3f309d48d78e7c627ccb ""
-  "Lina21A-v4.aux" 1636749113 134 6ccd604d1e159e97f0e838bbfabfc7a1 "pdflatex"
-  "Lina21A-v4.tex" 1636749112 8237 2b38151e0b90029e8f89b63ecc236bb1 ""
-  "c:/Users/torfi/Documents/Skóli/H2021/STÆ106G/HópUmræ/UmRaeTiSkilaverk 4/Lina21A-v4.tex" 1636749112 8237 2b38151e0b90029e8f89b63ecc236bb1 ""
+  "Lina21A-v4.aux" 1636750287 134 6ccd604d1e159e97f0e838bbfabfc7a1 "pdflatex"
+  "Lina21A-v4.tex" 1636750285 8236 dc8e0a4d47e2b9a74b67e390e86eeaa0 ""
+  "c:/Users/torfi/Documents/Skóli/H2021/STÆ106G/HópUmræ/UmRaeTiSkilaverk 4/Lina21A-v4.tex" 1636750285 8236 dc8e0a4d47e2b9a74b67e390e86eeaa0 ""
   (generated)
   "Lina21A-v4.log"
   "Lina21A-v4.pdf"
