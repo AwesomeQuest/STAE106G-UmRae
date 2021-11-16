@@ -90,6 +90,21 @@
 \smallskip
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {\bf 1.} Látum $A$ vera $n\times n$ fylkið 
 $$A=\begin{bmatrix}
 a+b&a&a&\cdots&a\\
@@ -147,6 +162,21 @@ $=b^2(a+b)$
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {\bf 2.}   Leysið jöfnuna 
 $$\det\begin{bmatrix}
 1&1&1&\cdots&1\\
@@ -157,6 +187,17 @@ $$\det\begin{bmatrix}
 \end{bmatrix}=0.$$
 
 \smallskip\newpage
+
+
+
+
+
+
+
+
+
+
+
 
 {\bf 3.}  Setning Perron (1880--1975) er mjög nytsamleg niðurstaða um eigingildi ferningsfylkja sem eru þannig að allar tölurnar eru jákvæðar.  Setningin, og sérstaklega útvíkkun Frobeniusar (1849--1917), fellur utan við námsefni námskeiðs eins og okkar.  En það passar vel við okkar efni að sanna setninguna fyrir $2\times 2$ fylki.  
 
@@ -212,42 +253,83 @@ $=\cancel{\dfrac{a\sqrt{a^2-2ad+d^2+4bc}-\sqrt{a^2-2ad+d^2+4bc}a}{4}}$
 
 $=\dfrac{4ad+4bc}{4}=ad+bc$
 
-\bigskip
 \newpage
+
+
+
+
+
+
+
+
+
+
+
 
 {\bf (b)}  Sýnið að bæði $\lambda$ og $\mu$ eru rauntölur. [Leiðbeining:  Gerið ráð fyrir að $\lambda=x+iy$ með $y\neq 0$.  Þá er $\mu=x-iy$ (Afhverju?).  Notið svo jöfnurnar í {\bf (a)}-lið til að leiða fram mótsögn.  Athugið sérstaklega að $2x=a+d$.   Ein leið væri að fá að $-bc$ er jafnt $(a-d)^2+y^2$.] 
 
-Ef $\lambda$ og/eða $\mu$ eru tvin tölur þá hlítur $\pm\frac{\sqrt{a^2-2ad+d^2+4bc}}{2}$ að vera tvintalan. Þá þarf $2ad>a^2+d^2+4bc$. Þessi Matlab kóði skilar True.
+Ef $\lambda$ og/eða $\mu$ eru tvin tölur þá hlítur $\pm\frac{\sqrt{a^2-2ad+d^2+4bc}}{2}$ að vera tvintalan. Þá þarf $2ad>a^2+d^2+4bc$. 
 
 \begin{lstlisting}
 	syms a;syms b;syms c;syms d
 	assume(a>0);assume(b>0);assume(c>0);assume(d>0);
-
+	
 	isAlways(2*a*d < a*a+d*d+4*b*c)
 \end{lstlisting}
 
+Þessi Matlab kóði skilar True.
 Þannig að $\pm\frac{\sqrt{a^2-2ad+d^2+4bc}}{2}$ er aldrei tvintala.
+
+\bigskip
+\bigskip
 
 {\bf (c)}   Gerið grein fyrir að $\lambda\neq \mu$ og að ef $\lambda>\mu$ þá er $\lambda>|\mu|>0$.  Hér á eftir er gert ráð fyrir $\lambda> \mu$.
 [Leiðbeining: Til að sýna að $\lambda\neq \mu$ er hægt að horfa á útreikningana í {\bf (b)}-lið og setja $y=0$.  Notið ykkur jöfnurnar í {\bf (a)}-lið.]
 
 \bigskip
-Fyrst að það eru tvo eigingildi fyrir $A$ sem við skrifum 
 
-$\lambda = \dfrac{a+d\pm\sqrt{a^2-2ad+d^2+4bc}}{2}$
+Við vitum að $2ad<a^2+d^2+4bc$, þá er $\sqrt{a^2-2ad+d^2+4bc}> 0$.
+Þá er $\lambda \neq \mu$
 
-og við getum skilgreint minna $\lambda = \mu$
+Við skilgreinum 
+
+$\lambda = \dfrac{a+d+\sqrt{a^2-2ad+d^2+4bc}}{2}$
+
+$\mu = \dfrac{a+d-\sqrt{a^2-2ad+d^2+4bc}}{2}$
+
+Þannig að $\lambda > \mu$.
+
+$a,b,c,d > 0$ þannig hvorki $\lambda$ né $\mu$ eru mínus tölur þa. $\lambda>|\mu|>0$
+
+\bigskip
 
 {\bf (d)}  Notið ykkur jöfnurnar í {\bf (a)}-lið til að sýna að $\lambda>a$ eða $\lambda>d$.
 
+$\lambda > \mu$
 
+$\lambda + \mu = a + d$
+
+
+
+\bigskip
 
 {\bf (e)}   Sýnið að ef $\vv=(v_1,v_2)$ er eiginvigur tilheyrandi $\lambda$ þá er $v_1\neq 0$ og $v_2\neq 0$.
 
 
 
+\bigskip
+
 {\bf (f)}  Gerið grein fyrir að hægt er að velja eiginvigurinn   $\vv=(v_1,v_2)$ fyrir $\lambda$ þannig að $v_1=1$ og þá er $v_2>0$.  
 \smallskip\newpage
+
+
+
+
+
+
+
+
+
 
 {\bf 4.}  Cayley-Hamilton setningin er grundvallar niðurstaða um kennimargliðuna.  Cayley-Hamilton setningin mun nýtast ykkur í Stærðfræðigreiningu III þegar þið reiknið $e^{tA}$ fyrir $n\times n$ fylki $A$.  Í þessu námskeiði höfum við ekki tiltæk verkfæri til að sanna setninguna almennt en við getum sannað sértilfelli.
 
