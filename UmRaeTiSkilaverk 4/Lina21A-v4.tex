@@ -218,6 +218,10 @@ $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$.   Forsendan segir að $a, b, c, d>0$.
 
 {\bf (a)}  Sýnið að $\lambda+\mu=a+d$ og $\lambda\mu=ad-bc$.
 
+\bigskip
+
+Lausn:
+
 $\Det
 \begin{bmatrix}
 	a-\lambda&b\\
@@ -257,16 +261,11 @@ $=\dfrac{4ad+4bc}{4}=ad+bc$
 
 
 
-
-
-
-
-
-
-
-
-
 {\bf (b)}  Sýnið að bæði $\lambda$ og $\mu$ eru rauntölur. [Leiðbeining:  Gerið ráð fyrir að $\lambda=x+iy$ með $y\neq 0$.  Þá er $\mu=x-iy$ (Afhverju?).  Notið svo jöfnurnar í {\bf (a)}-lið til að leiða fram mótsögn.  Athugið sérstaklega að $2x=a+d$.   Ein leið væri að fá að $-bc$ er jafnt $(a-d)^2+y^2$.] 
+
+\bigskip
+
+Lausn:
 
 Ef $\lambda$ og/eða $\mu$ eru tvin tölur þá hlítur $\pm\frac{\sqrt{a^2-2ad+d^2+4bc}}{2}$ að vera tvintalan. Þá þarf $2ad>a^2+d^2+4bc$. 
 
@@ -281,12 +280,13 @@ Ef $\lambda$ og/eða $\mu$ eru tvin tölur þá hlítur $\pm\frac{\sqrt{a^2-2ad+d^2+4
 Þannig að $\pm\frac{\sqrt{a^2-2ad+d^2+4bc}}{2}$ er aldrei tvintala.
 
 \bigskip
-\bigskip
 
 {\bf (c)}   Gerið grein fyrir að $\lambda\neq \mu$ og að ef $\lambda>\mu$ þá er $\lambda>|\mu|>0$.  Hér á eftir er gert ráð fyrir $\lambda> \mu$.
 [Leiðbeining: Til að sýna að $\lambda\neq \mu$ er hægt að horfa á útreikningana í {\bf (b)}-lið og setja $y=0$.  Notið ykkur jöfnurnar í {\bf (a)}-lið.]
 
 \bigskip
+
+Lausn:
 
 Við vitum að $2ad<a^2+d^2+4bc$, þá er $\sqrt{a^2-2ad+d^2+4bc}> 0$.
 Þá er $\lambda \neq \mu$
@@ -347,23 +347,26 @@ $\lambda + \mu = a + d$
 {\em Sönnun.}  Nú er 
 $ p(\lambda)=\det(A-\lambda I)$.   Þá $ p(A)=\det(A-A I)=\det(\OOv)=0$.   Sönnun lokið.
 
+\bigskip
+
 Lausn:
 
-Ef skilgreiningin á $\OOv$ er núll fylki þá já. 
+$A-A=\underline{0}, \forall A\in \mathbb{R}^{n\times m}$
+
+$AI=A, \forall A\in \mathbb{R}^{n\times m}$
+
+$\Det (\underline{0})=0$
+
+$p(x)=\Det(A-xI)$
+
+$p(A)=\Det(A-AI)=\Det(A-A)=\Det(\underline{0})=0$
+
+Ef við skilgreinum $\OOv = \underline{0}$ þá þetta gild sönnun
 
 \smallskip
 
 {\bf (b)} Sannið Cayley-Hamilton setninguna fyrir $2\times 2$ fylki $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$.  (Cayley (1821-1895) birti bara sönnun á þessu sértilfelli en mun líka hafa sannað setninguna fyrir $3\times 3$ fylki.  Almenna setningin var fyrst sönnuð af Frobenius.)
 
-$A-A=0, \forall A\in \mathbb{R}^{n\times m}$
-
-$AI=A, \forall A\in \mathbb{R}^{n\times m}$
-
-$\Det (0)=0$
-
-$p(x)=\Det(A-xI)$
-
-$p(A)=\Det(A-AI)=\Det(A-A)=\Det(0)=0$
 
 \medskip
 
