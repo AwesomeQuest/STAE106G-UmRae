@@ -1,8 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1637070924 "c:/Users/torfi/Documents/Skóli/H2021/STÆ106G/HópUmræ/UmRaeTiSkilaverk 4/Lina21A-v4.tex" "Lina21A-v4.pdf" "Lina21A-v4" 1637070925
+["pdflatex"] 1637076823 "c:/Users/torfi/Documents/Skóli/H2021/STÆ106G/HópUmræ/UmRaeTiSkilaverk 4/Lina21A-v4.tex" "Lina21A-v4.pdf" "Lina21A-v4" 1637076874
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1631634375 31952 0ac8e909c851b644f471df636c3c937c ""
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk" 1631634377 49100 4254624b3c48be7a85c944691dacc2e7 ""
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk" 1631634381 72288 a8436578a51d06479f469517b433ea7b ""
+  "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk" 1637075051 19080 5eb00d2367ae926fc40eac0cf6ccccc4 ""
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1631634379 28440 77d01893ea1c13c7d3f6511618be86eb ""
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1200.pk" 1631634374 39120 c36bf4214353a928a71f3ba89189c3a7 ""
   "C:/Users/torfi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk" 1637067679 21972 bcf49b8a7ab26c15a367a006f1b9af58 ""
@@ -11,6 +12,8 @@
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1200.tfm" 993061958 3200 b8d69bc738e5ef3e08cefeef3109ff56 ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1728.tfm" 993061962 3204 d35cb76836b6cb4ed404dd64a550530d ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx2488.tfm" 993061966 3192 b0a07ba84fb3fb36d088c4f796e254b9 ""
+  "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0600.tfm" 993062116 3160 116e21835795bb29209ae8bb4682382f ""
+  "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0800.tfm" 993062118 3152 11ecf5aad6aacf00ff18f394ab23a8b5 ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1095.tfm" 993062124 3172 eb6efaa83c6c52473a1c403f376eab0f ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecti1200.tfm" 993062324 2832 28bbd97ca29f46e76c87a158a9915203 ""
@@ -79,10 +82,10 @@
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/tex/latex/listings/listings.sty" 1623004942 80964 64e57373f36316e4a09b517cbf1aba2e ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/tex/latex/listings/lstlang1.sty" 1623004943 204271 bae5b2d457283e99567249c1990510be ""
   "C:/Users/torfi/AppData/Local/Programs/MiKTeX/tex/latex/listings/lstmisc.sty" 1623004942 77022 ee25ce086f4a79d8cf73bac6f94c02a5 ""
-  "Lina21A-v4.aux" 1637070925 134 6ccd604d1e159e97f0e838bbfabfc7a1 "pdflatex"
-  "Lina21A-v4.tex" 1637070923 9518 253b0576aea94ae939ccfd2147c3b901 ""
-  "c:/Users/torfi/Documents/Skóli/H2021/STÆ106G/HópUmræ/UmRaeTiSkilaverk 4/Lina21A-v4.tex" 1637070923 9518 253b0576aea94ae939ccfd2147c3b901 ""
+  "Lina21A-v4.aux" 1637076824 134 6ccd604d1e159e97f0e838bbfabfc7a1 "pdflatex"
+  "Lina21A-v4.tex" 1637076873 10704 f40ebfff3c285ed8dcad80466c5386dd ""
+  "c:/Users/torfi/Documents/Skóli/H2021/STÆ106G/HópUmræ/UmRaeTiSkilaverk 4/Lina21A-v4.tex" 1637076873 10704 f40ebfff3c285ed8dcad80466c5386dd ""
   (generated)
+  "Lina21A-v4.aux"
   "Lina21A-v4.log"
   "Lina21A-v4.pdf"
-  "Lina21A-v4.aux"

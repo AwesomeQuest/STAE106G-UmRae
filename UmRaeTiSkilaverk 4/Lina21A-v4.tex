@@ -146,17 +146,23 @@ A=\begin{bmatrix}
 =B
 \]
 
-Viğ skoğum nú næst $3\times 3$ fylki $B_3$ og fáum $\Det(B_3)$
+Viğ skoğum nú næst $3\times 3$ fylki $B_3$ og fáum $\det(B_3)$
 
 \[
-\Det \begin{bmatrix}
+\det \begin{bmatrix}
 	a+b&a&a\\
 	-b&b&0\\
 	-b&0&0
 \end{bmatrix}
 =(a+b)(b*b-0)-a((-b)*b-0)+a(0-b*(-b))
 \]
-$=b^2(a+b)$
+$=b^2(a+b)+ab^2+ab^2=b^2(a+b)+b^2(2a)=b^2(3a+b)=b^{n-1} (na+b), n=3$
+
+ş.a. viğ fáum $\det(A)=(a+b)*\underbrace{b*b*\dots*b}_{n-1 \text{ sinnum}}+\underbrace{a*b^{n-1}+ab^{n-1}+\dots+ab^{n-1}}_{n-1 \text{ sinnum}}$
+
+$ =(a+b)b^{n-1}+((n-1)a)b^{n-1}=b^{n-1}((n-1)a+b)=b^{n-1}(na+b)$
+
+hér höfum viğ sınt ağ $\det(A)=b^{n-1}(na+b)$ fyrir öll $n\in \NN$
 
 \smallskip\newpage
 
@@ -178,13 +184,53 @@ $=b^2(a+b)$
 
 
 {\bf 2.}   Leysiğ jöfnuna 
-$$\det\begin{bmatrix}
-1&1&1&\cdots&1\\
-1&1-x&1&\cdots&1\\
-1&1&2-x&\cdots&1\\
-\vdots&\vdots&\vdots&\ddots&\vdots\\
-1&1&1&\cdots&n-x
-\end{bmatrix}=0.$$
+
+\[
+A=\begin{bmatrix}
+	1&1&1&\cdots&1\\
+	1&1-x&1&\cdots&1\\
+	1&1&2-x&\cdots&1\\
+	\vdots&\vdots&\vdots&\ddots&\vdots\\
+	1&1&1&\cdots&n-x
+	\end{bmatrix}
+\qquad
+\det(A)=0
+\qquad
+\]
+
+Lausn: Viğ ath. ağ viğ getum tekiğ línu 1 frá öllum öğrum línum í flylki $A$:
+
+$A=
+\begin{bmatrix}
+1		&1		&1		&\cdots	&1\\
+1		&1-x	&1		&\cdots	&1\\
+1		&1		&2-x	&\cdots	&1\\
+\vdots	&\vdots	&\vdots	&\ddots	&\vdots\\
+1		&1		&1		&\cdots	&n-x
+\end{bmatrix}
+\sim
+\begin{bmatrix}
+1		&1		&1		&\cdots	&1\\
+0		&-x		&0		&\cdots	&0\\
+0		&0		&1-x	&\cdots	&0\\
+\vdots	&\vdots	&\vdots	&\ddots	&\vdots\\
+0		&0		&0		&\cdots	&n-1-x
+\end{bmatrix}
+=B
+$
+
+Af şessu sést ağ şağ er forustuğull í öllum línum $A$ og şví 
+
+$\det(A)=\det(B)=(-x)*(1-x)*(2-x)*\dots*(n-1-x)=0$
+
+og ath. t.d. fyrir $3\times 3$ og $4\times 4$ fylki $A$ fáum viğ 
+
+$\det(A_3)=(-x)(1-x)(2-x)=0$, şşaa $x\in (0,1,2)$
+
+$\det(A_4)=(-x)(1-x)(2-x)(3-x)=0$, şşaa $x\in (0,1,2,3)$
+
+af şessu sjáum viğ ağ $\det(A)=0$ şegar $A$ er $n\times n$ fylki şşaa $x\in (0,1,2,\dots,n-1)$
+
 
 \smallskip\newpage
 
@@ -222,7 +268,7 @@ $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$.   Forsendan segir ağ $a, b, c, d>0$.
 
 Lausn:
 
-$\Det
+$\det
 \begin{bmatrix}
 	a-\lambda&b\\
 	c&d-\lambda
@@ -355,11 +401,11 @@ $A-A=\underline{0}, \forall A\in \mathbb{R}^{n\times m}$
 
 $AI=A, \forall A\in \mathbb{R}^{n\times m}$
 
-$\Det (\underline{0})=0$
+$\det (\underline{0})=0$
 
-$p(x)=\Det(A-xI)$
+$p(x)=\det(A-xI)$
 
-$p(A)=\Det(A-AI)=\Det(A-A)=\Det(\underline{0})=0$
+$p(A)=\det(A-AI)=\det(A-A)=\det(\underline{0})=0$
 
 Ef viğ skilgreinum $\OOv = \underline{0}$ şá şetta gild sönnun
 
