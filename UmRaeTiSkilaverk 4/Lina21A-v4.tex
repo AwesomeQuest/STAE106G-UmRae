@@ -6,6 +6,30 @@
 %\usepackage[utf8]{inputenc}
 \UseRawInputEncoding
 
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Matlab,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4
+}
+
 \voffset=-1.0in
 \hoffset=-0.5in
 \textwidth=6in
@@ -164,7 +188,7 @@ $\lambda = \dfrac{a+d+\sqrt{a^2-2ad+d^2+4bc}}{2}$
 
 $\mu = \dfrac{a+d-\sqrt{a^2-2ad+d^2+4bc}}{2}$
 
-$\lambda + \mu =\dfrac{a+d+a+d-\cancel{\sqrt{a^2-2ad+d^2+4bc}}-\cancel{\sqrt{a^2-2ad+d^2+4bc}}}{2}$
+$\lambda + \mu =\dfrac{a+d+a+d+\cancel{\sqrt{a^2-2ad+d^2+4bc}}-\cancel{\sqrt{a^2-2ad+d^2+4bc}}}{2}$
 
 $=\dfrac{2a+2d}{2}=a+d$
 
@@ -189,10 +213,20 @@ $=\cancel{\dfrac{a\sqrt{a^2-2ad+d^2+4bc}-\sqrt{a^2-2ad+d^2+4bc}a}{4}}$
 $=\dfrac{4ad+4bc}{4}=ad+bc$
 
 \bigskip
+\newpage
 
 {\bf (b)}  Sýnið að bæði $\lambda$ og $\mu$ eru rauntölur. [Leiðbeining:  Gerið ráð fyrir að $\lambda=x+iy$ með $y\neq 0$.  Þá er $\mu=x-iy$ (Afhverju?).  Notið svo jöfnurnar í {\bf (a)}-lið til að leiða fram mótsögn.  Athugið sérstaklega að $2x=a+d$.   Ein leið væri að fá að $-bc$ er jafnt $(a-d)^2+y^2$.] 
 
-\newpage
+Ef $\lambda$ og/eða $\mu$ eru tvin tölur þá hlítur $\pm\frac{\sqrt{a^2-2ad+d^2+4bc}}{2}$ að vera tvintalan. Þá þarf $2ad>a^2+d^2+4bc$. Þessi Matlab kóði skilar True.
+
+\begin{lstlisting}
+	syms a;syms b;syms c;syms d
+	assume(a>0);assume(b>0);assume(c>0);assume(d>0);
+
+	isAlways(2*a*d < a*a+d*d+4*b*c)
+\end{lstlisting}
+
+Þannig að $\pm\frac{\sqrt{a^2-2ad+d^2+4bc}}{2}$ er aldrei tvintala.
 
 {\bf (c)}   Gerið grein fyrir að $\lambda\neq \mu$ og að ef $\lambda>\mu$ þá er $\lambda>|\mu|>0$.  Hér á eftir er gert ráð fyrir $\lambda> \mu$.
 [Leiðbeining: Til að sýna að $\lambda\neq \mu$ er hægt að horfa á útreikningana í {\bf (b)}-lið og setja $y=0$.  Notið ykkur jöfnurnar í {\bf (a)}-lið.]
