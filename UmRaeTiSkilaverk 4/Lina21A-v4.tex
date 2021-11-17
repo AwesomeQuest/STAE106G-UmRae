@@ -277,33 +277,24 @@ $\lambda = \dfrac{a+d+\sqrt{a^2-2ad+d^2+4bc}}{2}$
 
 $\mu = \dfrac{a+d-\sqrt{a^2-2ad+d^2+4bc}}{2}$
 
-$\lambda + \mu =\dfrac{a+d+a+d+\cancel{\sqrt{a^2-2ad+d^2+4bc}}-\cancel{\sqrt{a^2-2ad+d^2+4bc}}}{2}$
+$s=\sqrt{a^2-2ad+d^2+4bc}$
 
+$\lambda + \mu =\dfrac{a+d+a+d+\cancel{s}-\cancel{s}}{2}$
 $=\dfrac{2a+2d}{2}=a+d$
 
 \smallskip
 \smallskip
 
-$\lambda \mu =\dfrac{a+d+\sqrt{a^2-2ad+d^2+4bc}}{2}*\dfrac{a+d-\sqrt{a^2-2ad+d^2+4bc}}{2}$
-
-$=\dfrac{a^2+ad+a\sqrt{a^2-2ad+d^2+4bc}+da+d^2+d\sqrt{a^2-2ad+d^2+4bc}}{4}$
-
-\quad$+\dfrac{-\sqrt{a^2-2ad+d^2+4bc}a-\sqrt{a^2-2ad+d^2+4bc}d}{4}$
-
-\quad$\dfrac{-\sqrt{a^2-2ad+d^2+4bc}\sqrt{a^2-2ad+d^2+4bc}}{4}$
-
-$=\cancel{\dfrac{a\sqrt{a^2-2ad+d^2+4bc}-\sqrt{a^2-2ad+d^2+4bc}a}{4}}$
-
-\quad$+\cancel{\dfrac{d\sqrt{a^2-2ad+d^2+4bc}-\sqrt{a^2-2ad+d^2+4bc}d}{4}}$
-
-\bigskip
-\quad$+\dfrac{\cancel{a^2}+2ad+\cancel{d^2}-\cancel{a^2}+2ad-\cancel{d^2}+4bc}{4}$
-
+$\lambda \mu =\dfrac{a+d+s}{2}*\dfrac{a+d-s}{2}$
+$=\dfrac{a^2+ad+as+da+d^2+ds}{4}$
+$+\dfrac{-sa-sd}{4}$
+$\dfrac{-ss}{4}$
+$=\cancel{\dfrac{as-sa}{4}}$
+$+\cancel{\dfrac{ds-sd}{4}}$
+$+\dfrac{\cancel{a^2}+2ad+\cancel{d^2}-\cancel{a^2}+2ad-\cancel{d^2}+4bc}{4}$
 $=\dfrac{4ad+4bc}{4}=ad+bc$
 
-\newpage
-
-
+\bigskip
 
 {\bf (b)}  Sýnið að bæði $\lambda$ og $\mu$ eru rauntölur. [Leiðbeining:  Gerið ráð fyrir að $\lambda=x+iy$ með $y\neq 0$.  Þá er $\mu=x-iy$ (Afhverju?).  Notið svo jöfnurnar í {\bf (a)}-lið til að leiða fram mótsögn.  Athugið sérstaklega að $2x=a+d$.   Ein leið væri að fá að $-bc$ er jafnt $(a-d)^2+y^2$.] 
 
@@ -311,7 +302,7 @@ $=\dfrac{4ad+4bc}{4}=ad+bc$
 
 \underline{Lausn}:
 
-Ef $\lambda$ og/eða $\mu$ eru tvin tölur þá hlítur $\pm\dfrac{\sqrt{a^2-2ad+d^2+4bc}}{2}$ að vera tvintalan. Þá þarf $2ad>a^2+d^2+4bc$. 
+Ef $\lambda$ og/eða $\mu$ eru tvin tölur þá hlítur $\pm\dfrac{s}{2}$ að vera tvintalan. Þá þarf $2ad>a^2+d^2+4bc$. 
 
 \begin{lstlisting}
 	syms a;syms b;syms c;syms d
@@ -321,9 +312,9 @@ Ef $\lambda$ og/eða $\mu$ eru tvin tölur þá hlítur $\pm\dfrac{\sqrt{a^2-2ad+d^2+
 \end{lstlisting}
 
 Þessi Matlab kóði skilar True.
-Þannig að $\pm\dfrac{\sqrt{a^2-2ad+d^2+4bc}}{2}$ er aldrei tvintala.
+Þannig að $\pm\dfrac{s}{2}$ er aldrei tvintala.
 
-\bigskip
+\newpage
 
 {\bf (c)}   Gerið grein fyrir að $\lambda\neq \mu$ og að ef $\lambda>\mu$ þá er $\lambda>|\mu|>0$.  Hér á eftir er gert ráð fyrir $\lambda> \mu$.
 [Leiðbeining: Til að sýna að $\lambda\neq \mu$ er hægt að horfa á útreikningana í {\bf (b)}-lið og setja $y=0$.  Notið ykkur jöfnurnar í {\bf (a)}-lið.]
@@ -332,14 +323,14 @@ Ef $\lambda$ og/eða $\mu$ eru tvin tölur þá hlítur $\pm\dfrac{\sqrt{a^2-2ad+d^2+
 
 \underline{Lausn}:
 
-Við vitum að $2ad<a^2+d^2+4bc$, þá er $\sqrt{a^2-2ad+d^2+4bc}> 0$.
+Við vitum að $2ad<a^2+d^2+4bc$, þá er $s> 0$.
 Þá er $\lambda \neq \mu$
 
 Við skilgreinum 
 
-$\lambda = \dfrac{a+d+\sqrt{a^2-2ad+d^2+4bc}}{2}$
+$\lambda = \dfrac{a+d+s}{2}$
 
-$\mu = \dfrac{a+d-\sqrt{a^2-2ad+d^2+4bc}}{2}$
+$\mu = \dfrac{a+d-s}{2}$
 
 Þannig að $\lambda > \mu$.
 
